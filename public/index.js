@@ -1,11 +1,12 @@
 let transactions = [];
 let myChart;
-
+console.log("test123");
 fetch("/api/transaction")
   .then(response => {
     return response.json();
   })
   .then(data => {
+    console.log(data);
     // save db data on global variable
     transactions = data;
 
